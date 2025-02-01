@@ -12,15 +12,8 @@ This is my personal website, built using React and Node.js. I developed this pro
 Before development, I created prototypes in Figma to visualise the design and layout of my website. Below are images of the initial designs.  
 <img width="922" alt="Screenshot 2025-02-01 at 16 37 03" src="https://github.com/user-attachments/assets/aa7c58c9-2a4c-442d-b787-0c2729851e0e" />
 
-
 ## **Live Demo**  
-[Insert link here if deployed]  
-
-## **Tech Stack**  
-- React  
-- Node.js  
-- Tailwind CSS  
-- Figma (for design)  
+[Link incoming]  
 
 ## **Setup & Installation**  
 To run this project locally:  
