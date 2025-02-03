@@ -19,7 +19,7 @@ I first created a Next.js project (suprising amount of time to set it up!) then 
 - Background (using tailwind blur and positioning to create a purple aura for the back of the webpage)
 - Navigation bar (takes in a string to indicate which page user is on, dynamically updating on clicks)
 
-## **Animations** 
+## **Animations** 
 - Use of ternery operators and opacity to fade in and out boxes from the page - animated p tag? 
 
 ## **Live Demo**  
