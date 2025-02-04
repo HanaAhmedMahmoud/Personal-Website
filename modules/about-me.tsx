@@ -1,9 +1,20 @@
+'use client';
 import {m_plus_1, poltawski} from '@/app/fonts';
+import {useIsVisible} from '@/custom-hooks/use-if-visable';
+import {useRef} from 'react';
 
 export default function AboutMe() {
+  const ref1 = useRef<HTMLDivElement>(null);
+  const isVisible1 = useIsVisible({ref: ref1});
+
   return (
-    <div className="mt-[20vh] flex justify-end mr-20">
-      <div>
+    <div className="mt-[30vh] flex justify-end mr-20">
+      <div
+        ref={ref1} //add reference to useRef
+        className={`transition-opacity ease-in duration-700 ${
+          isVisible1 ? 'opacity-100' : 'opacity-0'
+        }`}
+      >
         <h1 className={`${poltawski.className} text-9xl pl-[200px]`}>
           About me
         </h1>
