@@ -8,7 +8,7 @@ export default function AboutMe() {
   const isVisible1 = useIsVisible({ref: ref1});
 
   return (
-    <div className="mt-[20vh] flex justify-end mr-20">
+    <div className="mt-[20vh] flex justify-end mr-20" id="about-me">
       <div
         ref={ref1}
         className={`transition-opacity ease-in duration-700 ${
