@@ -7,7 +7,7 @@ import Experience from '@/modules/experience';
 export default function Home() {
   return (
     <div>
-      <NavigationBar clicked="home" />
+      <NavigationBar />
       <Landing />
       <AboutMe />
       <Background />

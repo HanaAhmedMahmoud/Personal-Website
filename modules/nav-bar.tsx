@@ -3,12 +3,8 @@ import {useEffect, useState} from 'react';
 import {Link} from 'react-scroll';
 import clsx from 'clsx';
 
-type params = {
-  clicked: string;
-};
-
-export default function NavigationBar({clicked}: params) {
-  const [userClicked, setClicked] = useState(clicked);
+export default function NavigationBar() {
+  const [userClicked, setClicked] = useState('home');
 
   useEffect(() => {
     setClicked('home');
