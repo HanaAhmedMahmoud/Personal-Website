@@ -80,7 +80,7 @@ export default function NavigationBar() {
             smooth={true}
             duration={800}
             className="cursor-pointer"
-            onClick={() => setClicked('project')}
+            onClick={() => setClicked('projects')}
           >
             projects
           </Link>
