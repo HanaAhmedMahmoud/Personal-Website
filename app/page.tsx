@@ -5,6 +5,7 @@ import Landing from '@/modules/landing';
 import Experience from '@/modules/experience';
 import Projects from '@/modules/projects';
 import Contact from '@/modules/contact';
+import {Suspense} from 'react';
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
       <Background />
       <Experience />
       <Projects />
-      <Contact />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Contact />
+      </Suspense>
     </div>
   );
 }
