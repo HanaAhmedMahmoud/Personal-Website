@@ -16,7 +16,7 @@ export default function ExperienceBubble({name, role, date, desc}: param) {
       <h2 className="text-2xl mt-3">Role: {role}</h2>
       <h3 className="font-light italic mt-2">{date}</h3>
       <hr className="h-px my-4 bg-[#43005E] border-0"></hr>
-      <p>{desc}</p>
+      <p className="break-words">{desc}</p>
     </div>
   );
 }

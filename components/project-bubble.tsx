@@ -29,7 +29,7 @@ export default function ProjectBubble({
         <h2 className="text-2xl mt-3">Langauge: {language}</h2>
         <h2 className="text-2xl mt-3">Skills: {skills}</h2>
         <hr className="h-px my-4 bg-[#43005E] border-0"></hr>
-        <p>{desc}</p>
+        <p className="break-words">{desc}</p>
       </div>
     </a>
   );
