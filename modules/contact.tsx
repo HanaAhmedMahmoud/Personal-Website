@@ -1,5 +1,6 @@
 'use client';
 import {m_plus_1, poltawski} from '@/app/fonts';
+import clsx from 'clsx';
 import {useSearchParams} from 'next/navigation';
 import {useState} from 'react';
 
@@ -11,6 +12,35 @@ export default function Contact() {
     email: '',
     message: '',
   });
+  const [errorMessage, setErrorMessage] = useState('Error message set up');
+
+  async function submit() {
+    if (formData.name && formData.email && formData.message) {
+      console.log(formData.name + formData.email + formData.message);
+      try {
+        const response = await fetch('/api/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          setErrorMessage('Email sent successfully');
+          setFormData({name: '', email: '', message: ''});
+        } else {
+          setErrorMessage('Error sending email: ' + result.error);
+        }
+      } catch {
+        setErrorMessage('Something went wrong. Please try again.');
+      }
+    } else {
+      setErrorMessage('Please double-check your entries.');
+    }
+  }
 
   return (
     <div
@@ -31,7 +61,7 @@ export default function Contact() {
           Send me a message...
         </h1>
         <div className={`${m_plus_1.className}`}>
-          <div className="flex flex-row my-8">
+          <div className="flex flex-row my-6">
             <h2 className="text-xl px-10">Name:</h2>
             <input
               className="bg-[#F9F9F9] border border-[#C1C1C1] rounded h-[30px] w-[425px] p-2"
@@ -42,7 +72,7 @@ export default function Contact() {
             ></input>
           </div>
 
-          <div className="flex flex-row my-8">
+          <div className="flex flex-row my-6">
             <h2 className="text-xl px-10">Email:</h2>
             <input
               className="bg-[#F9F9F9] border border-[#C1C1C1] rounded h-[30px] w-[425px] p-2"
@@ -54,10 +84,10 @@ export default function Contact() {
             ></input>
           </div>
 
-          <div className="flex flex-row my-8">
+          <div className="flex flex-row mt-6">
             <h2 className="text-xl px-6">Message:</h2>
             <textarea
-              className="bg-[#F9F9F9] border border-[#C1C1C1] rounded h-[175px] w-[425px] resize-none p-2"
+              className="bg-[#F9F9F9] border border-[#C1C1C1] rounded h-[125px] w-[425px] resize-none p-2"
               value={formData.message}
               onChange={(e) => {
                 setFormData({...formData, message: e.target.value});
@@ -66,9 +96,28 @@ export default function Contact() {
           </div>
 
           <div className="flex place-content-center">
-            <button className="bg-[#43005E] w-[200px] h-[45px] text-white rounded-3xl opacity-75 text-xl">
+            <p
+              className={clsx(
+                'my-4',
+                {'text-white': errorMessage == 'Error message set up'},
+                {
+                  'text-red-500':
+                    errorMessage == 'Please double check your entries',
+                },
+                {'text-green-500': errorMessage == 'Email sent successfully'}
+              )}
+            >
+              {errorMessage}
+            </p>
+          </div>
+
+          <div className="flex place-content-center">
+            <button
+              className="bg-[#43005E] w-[200px] h-[45px] text-white rounded-3xl opacity-75 text-xl"
+              onClick={() => submit()}
+            >
               Submit
-            </button>
+            </button>{' '}
           </div>
         </div>
       </div>

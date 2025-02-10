@@ -15,7 +15,8 @@
     "react": "^19.0.0",
     "react-alice-carousel": "^2.9.1",
     "react-dom": "^19.0.0",
-    "react-scroll": "^1.9.2"
+    "react-scroll": "^1.9.2",
+    "resend": "^4.1.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
