@@ -4,6 +4,7 @@ import AboutMe from '@/modules/about-me';
 import Landing from '@/modules/landing';
 import Experience from '@/modules/experience';
 import Projects from '@/modules/projects';
+import Contact from '@/modules/contact';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Background />
       <Experience />
       <Projects />
+      <Contact />
     </div>
   );
 }

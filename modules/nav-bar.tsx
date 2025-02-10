@@ -92,8 +92,15 @@ export default function NavigationBar() {
             {'bg-[#E2BDF0]': userClicked == 'contact'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'contact'}
           )}
+          onClick={() =>
+            window.history.replaceState(
+              null,
+              '',
+              window.location.pathname + '?contactClicked=true'
+            )
+          }
         >
-          <a href="/contact"> contact</a>
+          contact
         </button>
       </div>
     </div>
