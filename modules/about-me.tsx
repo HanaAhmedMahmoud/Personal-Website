@@ -15,7 +15,9 @@ export default function AboutMe() {
           isVisible1 ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <h1 className={`${poltawski.className} text-9xl pl-[200px]`}>
+        <h1
+          className={`${poltawski.className} text-9xl flex place-content-end`}
+        >
           About me
         </h1>
         <p

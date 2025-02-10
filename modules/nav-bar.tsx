@@ -11,7 +11,7 @@ export default function NavigationBar() {
   }, []);
 
   return (
-    <div className="fixed w-full top-0 right-0 py-7 text-xl bg-white">
+    <div className="fixed w-full top-0 right-0 py-7 text-xl bg-white z-30">
       <div className="absolute top-0 right-0 flex flex-row gap-10 mt-2 mx-10">
         <button
           className={clsx(
