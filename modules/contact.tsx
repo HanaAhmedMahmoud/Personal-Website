@@ -56,15 +56,17 @@ export default function Contact() {
         }
       />
 
-      <div className="bg-white w-[650px] h-[450px] rounded-xl z-20 border border-2 border-[#43005E]">
-        <h1 className={`${poltawski.className} text-4xl my-5 mx-5`}>
+      <div className="bg-white w-[350px] h-[250px] sm:w-[650px] sm:h-[450px] rounded-xl z-20 border border-2 border-[#43005E]">
+        <h1
+          className={`${poltawski.className} text-xl sm:text-4xl my-3 sm:my-5 mx-5`}
+        >
           Send me a message...
         </h1>
         <div className={`${m_plus_1.className}`}>
-          <div className="flex flex-row my-6">
-            <h2 className="text-xl px-10">Name:</h2>
+          <div className="flex flex-row my-3 sm:my-6">
+            <h2 className="text-sm sm:text-xl px-10">Name:</h2>
             <input
-              className="bg-[#F9F9F9] border border-[#C1C1C1] rounded h-[30px] w-[425px] p-2"
+              className="bg-[#F9F9F9] border border-[#C1C1C1] rounded text-xs sm:text-lg h-[20px] w-[150px] sm:h-[30px] sm:w-[425px] p-2"
               value={formData.name}
               onChange={(e) => {
                 setFormData({...formData, name: e.target.value});
@@ -72,10 +74,10 @@ export default function Contact() {
             ></input>
           </div>
 
-          <div className="flex flex-row my-6">
-            <h2 className="text-xl px-10">Email:</h2>
+          <div className="flex flex-row my-3 sm:my-6">
+            <h2 className="text-sm sm:text-xl px-10">Email:</h2>
             <input
-              className="bg-[#F9F9F9] border border-[#C1C1C1] rounded h-[30px] w-[425px] p-2"
+              className="bg-[#F9F9F9] border border-[#C1C1C1] rounded text-xs sm:text-lg h-[20px] w-[150px] sm:h-[30px] sm:w-[425px] p-2"
               value={formData.email}
               onChange={(e) => {
                 setFormData({...formData, email: e.target.value});
@@ -84,10 +86,10 @@ export default function Contact() {
             ></input>
           </div>
 
-          <div className="flex flex-row mt-6">
-            <h2 className="text-xl px-6">Message:</h2>
+          <div className="flex flex-row mt-3 sm:mt-6">
+            <h2 className="text-sm sm:text-xl px-7 sm:px-6">Message:</h2>
             <textarea
-              className="bg-[#F9F9F9] border border-[#C1C1C1] rounded h-[125px] w-[425px] resize-none p-2"
+              className="bg-[#F9F9F9] border border-[#C1C1C1] rounded text-xs sm:text-lg h-[50px] w-[150px] sm:h-[130px] sm:w-[425px] resize-none p-2"
               value={formData.message}
               onChange={(e) => {
                 setFormData({...formData, message: e.target.value});
@@ -98,7 +100,7 @@ export default function Contact() {
           <div className="flex place-content-center">
             <p
               className={clsx(
-                'my-4',
+                'my-3 sm:my-4 text-xs sm:text-lg',
                 {'text-white': errorMessage == 'Error message set up'},
                 {
                   'text-red-500':
@@ -113,7 +115,7 @@ export default function Contact() {
 
           <div className="flex place-content-center">
             <button
-              className="bg-[#43005E] w-[200px] h-[45px] text-white rounded-3xl opacity-75 text-xl"
+              className="bg-[#43005E] text-xs w-[100px] h-[28px] sm:w-[200px] sm:h-[45px] text-white rounded-3xl opacity-75 sm:text-xl"
               onClick={() => submit()}
             >
               Submit

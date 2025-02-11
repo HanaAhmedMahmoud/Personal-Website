@@ -85,7 +85,9 @@ export default function Projects() {
         }`}
       >
         <div className="flex place-content-end">
-          <h1 className={`${poltawski.className} text-8xl`}>Projects</h1>
+          <h1 className={`${poltawski.className} text-6xl sm:text-8xl`}>
+            Projects
+          </h1>
         </div>
 
         <div className="flex justify-center mt-5">

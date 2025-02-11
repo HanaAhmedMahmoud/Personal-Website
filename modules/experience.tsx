@@ -118,7 +118,9 @@ export default function Experience() {
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <h1 className={`${poltawski.className} text-8xl ml-4`}>Experience</h1>
+        <h1 className={`${poltawski.className} text-6xl sm:text-8xl ml-4`}>
+          Experience
+        </h1>
         <div className="flex justify-center mt-5">
           {loaded ? (
             <AliceCarousel

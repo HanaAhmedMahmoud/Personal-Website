@@ -19,7 +19,7 @@ export default function ProjectBubble({
   return (
     <a href={link}>
       <div
-        className={`${m_plus_1.className} w-[400px] h-[400px] bg-white border border-2 border-[#43005E] rounded-xl p-5 m-5`}
+        className={`${m_plus_1.className} sm:w-[400px] sm:h-[400px] bg-white border border-2 border-[#43005E] rounded-xl p-5 m-5`}
       >
         <div className="flex place-content-between">
           <h1 className="text-2xl font-bold">{name}</h1>

@@ -12,7 +12,7 @@ export default function NavigationBar() {
 
   return (
     <div className="fixed w-full top-0 right-0 py-6 z-30">
-      <div className="absolute top-0 right-0 flex flex-row gap-10 py-0.5 px-0.5 mx-10 bg-white rounded-xl">
+      <div className="absolute top-0 right-0 flex flex-row gap-3 sm:gap-10 py-0.5 px-0.5 mx-10 bg-white rounded-xl">
         <button
           className={clsx(
             'w-[80px] h-[35px] rounded-xl',
