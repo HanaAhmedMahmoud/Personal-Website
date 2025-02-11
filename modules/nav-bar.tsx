@@ -11,11 +11,11 @@ export default function NavigationBar() {
   }, []);
 
   return (
-    <div className="fixed w-full top-0 right-0 py-7 text-xl bg-white z-30">
-      <div className="absolute top-0 right-0 flex flex-row gap-10 mt-2 mx-10">
+    <div className="fixed w-full top-0 right-0 py-6 z-30">
+      <div className="absolute top-0 right-0 flex flex-row gap-10 py-1 px-1 mx-10 bg-white rounded-xl">
         <button
           className={clsx(
-            'w-[100px] h-[40px] rounded-xl',
+            'w-[80px] h-[35px] rounded-xl',
             {'bg-[#E2BDF0]': userClicked == 'home'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'home'}
           )}
@@ -33,7 +33,7 @@ export default function NavigationBar() {
 
         <button
           className={clsx(
-            'w-[100px] h-[40px] rounded-xl',
+            'w-[80px] h-[35px] rounded-xl',
             {'bg-[#E2BDF0]': userClicked == 'about-me'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'about-me'}
           )}
@@ -52,7 +52,7 @@ export default function NavigationBar() {
 
         <button
           className={clsx(
-            'w-[120px] h-[40px] rounded-xl',
+            'w-[100px] h-[35px] rounded-xl',
             {'bg-[#E2BDF0]': userClicked == 'experience'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'experience'}
           )}
@@ -61,6 +61,7 @@ export default function NavigationBar() {
             to="experience"
             smooth={true}
             duration={800}
+            offset={-150}
             className="cursor-pointer"
             onClick={() => setClicked('experience')}
           >
@@ -70,7 +71,7 @@ export default function NavigationBar() {
 
         <button
           className={clsx(
-            'w-[100px] h-[40px] rounded-xl',
+            'w-[80px] h-[35px] rounded-xl',
             {'bg-[#E2BDF0]': userClicked == 'projects'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'projects'}
           )}
@@ -88,7 +89,7 @@ export default function NavigationBar() {
 
         <button
           className={clsx(
-            'w-[100px] h-[40px] rounded-xl',
+            'w-[80px] h-[35px] rounded-xl',
             {'bg-[#E2BDF0]': userClicked == 'contact'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'contact'}
           )}

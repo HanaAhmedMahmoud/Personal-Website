@@ -19,17 +19,17 @@ export default function ProjectBubble({
   return (
     <a href={link}>
       <div
-        className={`${m_plus_1.className} w-[25vw] h-[26vw] bg-white border border-2 border-[#43005E] rounded-xl p-5 m-5`}
+        className={`${m_plus_1.className} w-[28vw] h-[28vw] bg-white border border-2 border-[#43005E] rounded-xl p-5 m-5`}
       >
         <div className="flex place-content-between">
-          <h1 className="text-4xl font-bold">{name}</h1>
+          <h1 className="text-2xl font-bold">{name}</h1>
           <Image src="/assets/arrow.svg" width={60} height={60} alt="Arrow" />
         </div>
 
-        <h2 className="text-2xl mt-3">Langauge: {language}</h2>
-        <h2 className="text-2xl mt-3">Skills: {skills}</h2>
+        <h2 className="text-lg mt-3">Langauge: {language}</h2>
+        <h2 className="text-lg mt-3">Skills: {skills}</h2>
         <hr className="h-px my-4 bg-[#43005E] border-0"></hr>
-        <p className="text-xs">{desc}</p>
+        <p className="text-sm">{desc}</p>
       </div>
     </a>
   );

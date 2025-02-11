@@ -20,7 +20,7 @@ export const projects = [
   },
 
   {
-    name: 'Squid Game',
+    name: 'Predicting Squid Game',
     language: 'Python',
     skills: 'Data Analysis, Machine Learning, Web Scraping',
     desc:
@@ -77,7 +77,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="mt-[20vh] ml-20" id="projects">
+    <div className="mt-[20vh] mx-20 pb-10" id="projects">
       <div
         ref={ref}
         className={`transition-opacity ease-in duration-700 ${
@@ -85,7 +85,7 @@ export default function Projects() {
         }`}
       >
         <div className="flex place-content-end">
-          <h1 className={`${poltawski.className} text-9xl pr-20`}>Projects</h1>
+          <h1 className={`${poltawski.className} text-8xl`}>Projects</h1>
         </div>
 
         <div className="flex justify-center mt-5">

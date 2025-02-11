@@ -42,3 +42,6 @@ To run this project locally:
    git clone [your-repo-link]
    ```
 
+Things to sort out:
+page size
+responsive design

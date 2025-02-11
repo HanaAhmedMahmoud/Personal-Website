@@ -16,12 +16,12 @@ export default function AboutMe() {
         }`}
       >
         <h1
-          className={`${poltawski.className} text-9xl flex place-content-end`}
+          className={`${poltawski.className} text-8xl flex place-content-end`}
         >
           About me
         </h1>
         <p
-          className={`${m_plus_1.className} w-[40vw] text-xl my-10 text-right`}
+          className={`${m_plus_1.className} w-[40vw] text-lg my-10 text-right`}
         >
           I am a confident, enthusiastic and curious second year computer
           science student at the University of Nottingham who is dedicated to

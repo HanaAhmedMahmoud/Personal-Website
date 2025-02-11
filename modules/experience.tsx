@@ -111,14 +111,14 @@ export default function Experience() {
   }, []);
 
   return (
-    <div className="mt-[20vh] ml-20" id="experience">
+    <div className="mt-[20vh] mx-20" id="experience">
       <div
         ref={ref}
         className={`transition-opacity ease-in duration-700 ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <h1 className={`${poltawski.className} text-9xl`}>Experience</h1>
+        <h1 className={`${poltawski.className} text-8xl ml-4`}>Experience</h1>
         <div className="flex justify-center mt-5">
           {loaded ? (
             <AliceCarousel

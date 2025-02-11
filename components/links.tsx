@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Links() {
   return (
-    <div className={`${m_plus_1.className} flex flex-row gap-10 text-xl mt-5`}>
+    <div className={`${m_plus_1.className} flex flex-row gap-10 text-lg mt-5`}>
       <div className="flex flex-row">
         <a
           href="/assets/Hana-Ahmed-MahmoudCV.pdf"
