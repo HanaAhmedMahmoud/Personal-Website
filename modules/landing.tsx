@@ -9,7 +9,7 @@ export default function Landing() {
   const isVisible = useIsVisible({ref: ref1});
 
   return (
-    <div className="ml-20 pt-[20vh]" id="home">
+    <div className="ml-10 sm:ml-20 pt-[20vh]" id="home">
       <div className={poltawski.className}>
         <h1
           ref={ref1}

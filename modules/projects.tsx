@@ -77,7 +77,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="mt-[20vh] mx-20 pb-10" id="projects">
+    <div className="mt-[20vh] mx-10 sm:mx-20 pb-10" id="projects">
       <div
         ref={ref}
         className={`transition-opacity ease-in duration-700 ${
