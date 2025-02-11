@@ -9,11 +9,11 @@ export default function Landing() {
   const isVisible = useIsVisible({ref: ref1});
 
   return (
-    <div className="ml-10 sm:ml-20 pt-[20vh]" id="home">
+    <div className="ml-5 sm:ml-20 pt-[20vh]" id="home">
       <div className={poltawski.className}>
         <h1
           ref={ref1}
-          className={`text-7xl sm:text-8xl italic transition-opacity duration-2000 ${
+          className={`text-6xl sm:text-8xl italic transition-opacity duration-2000 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -21,7 +21,7 @@ export default function Landing() {
         </h1>
         <h1
           ref={ref1}
-          className={`text-7xl sm:text-8xl italic mt-5 transition-opacity duration-2000 delay-500 ${
+          className={`text-6xl sm:text-8xl italic mt-5 transition-opacity duration-2000 delay-500 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
