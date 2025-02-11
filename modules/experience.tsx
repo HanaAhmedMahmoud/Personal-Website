@@ -111,7 +111,7 @@ export default function Experience() {
   }, []);
 
   return (
-    <div className="mt-[20vh] mx-20" id="experience">
+    <div className="mt-20 mx-20" id="experience">
       <div
         ref={ref}
         className={`transition-opacity ease-in duration-700 ${

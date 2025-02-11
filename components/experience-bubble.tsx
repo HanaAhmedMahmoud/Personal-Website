@@ -10,7 +10,7 @@ type param = {
 export default function ExperienceBubble({name, role, date, desc}: param) {
   return (
     <div
-      className={`${m_plus_1.className} w-[28vw] h-[28vw] bg-white border border-2 border-[#43005E] rounded-xl p-5 m-5`}
+      className={`${m_plus_1.className} w-[400px] h-[400px] bg-white border border-2 border-[#43005E] rounded-xl p-5 m-5`}
     >
       <h1 className="text-2xl font-bold">{name}</h1>
       <h2 className="text-lg mt-3">Role: {role}</h2>
