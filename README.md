@@ -24,7 +24,7 @@ Before development, I designed prototypes in Figma to visualize the layout and s
 
 The website is deployed on Vercel (since I don't own a domain yet—maybe in a few years when I'm rich and famous haha). Check it out here:
 
-- [Live Website](https://hana-ahmed-mahmoud.vercel.app/)
+[Live Website](https://hana-ahmed-mahmoud.vercel.app/)
 
 ### **Responsive Design Proof**
 
