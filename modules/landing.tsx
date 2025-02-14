@@ -3,13 +3,15 @@ import {m_plus_1, poltawski} from '@/app/fonts';
 import Links from '@/components/links';
 import {useIsVisible} from '@/custom-hooks/use-if-visable';
 import {useRef} from 'react';
+import NavigationBar from './nav-bar';
 
 export default function Landing() {
   const ref1 = useRef<HTMLHeadingElement>(null);
   const isVisible = useIsVisible({ref: ref1});
 
   return (
-    <div className="ml-5 sm:ml-20 pt-[20vh]" id="home">
+    <div className="ml-5 sm:ml-20 py-[20vh]" id="home">
+      {isVisible && <NavigationBar partOfWebsite="home" />}
       <div className={poltawski.className}>
         <h1
           ref={ref1}

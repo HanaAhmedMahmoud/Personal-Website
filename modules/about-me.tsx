@@ -4,18 +4,23 @@ import {useIsVisible} from '@/custom-hooks/use-if-visable';
 import {useRef} from 'react';
 import Image from 'next/image';
 import ReactCurvedText from 'react-curved-text';
+import clsx from 'clsx';
+import NavigationBar from './nav-bar';
 
 export default function AboutMe() {
   const ref1 = useRef<HTMLDivElement>(null);
   const isVisible1 = useIsVisible({ref: ref1});
 
   return (
-    <div className="mt-[20vh] mx-5 sm:mr-20" id="about-me">
+    <div className="my-[20vh] mx-5 sm:mr-20" id="about-me">
+      {isVisible1 && <NavigationBar partOfWebsite="about-me" />}
       <div
         ref={ref1}
-        className={`transition-opacity ease-in duration-700 ${
-          isVisible1 ? 'opacity-100' : 'opacity-0'
-        }`}
+        className={clsx(
+          'transition-opacity ease-in duration-700',
+          {'opacity-100': isVisible1},
+          {'opacity-0': !isVisible1}
+        )}
       >
         <div className="flex justify-around">
           <div className="relative overflow-avalible w-[500px] h-[500px] flex items-center justify-center">

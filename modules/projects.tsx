@@ -5,6 +5,7 @@ import ProjectBubble from '@/components/project-bubble';
 import {useIsVisible} from '@/custom-hooks/use-if-visable';
 import {useEffect, useRef, useState} from 'react';
 import AliceCarousel from 'react-alice-carousel';
+import NavigationBar from './nav-bar';
 
 export const projects = [
   {
@@ -77,7 +78,8 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="mt-[20vh] mx-10 sm:mx-20 pb-10" id="projects">
+    <div className="my-[20vh] mx-10 sm:mx-20 pb-10" id="projects">
+      {isVisible && <NavigationBar partOfWebsite="projects" />}
       <div
         ref={ref}
         className={`transition-opacity ease-in duration-700 ${

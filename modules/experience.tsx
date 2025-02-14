@@ -6,6 +6,7 @@ import {useIsVisible} from '@/custom-hooks/use-if-visable';
 import {useEffect, useRef, useState} from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import NavigationBar from './nav-bar';
 
 export const experiences = [
   {
@@ -111,7 +112,8 @@ export default function Experience() {
   }, []);
 
   return (
-    <div className="mt-20 mx-10 sm:mx-20" id="experience">
+    <div className="my-20 mx-10 sm:mx-20" id="experience">
+      {isVisible && <NavigationBar partOfWebsite="experience" />}
       <div
         ref={ref}
         className={`transition-opacity ease-in duration-700 ${

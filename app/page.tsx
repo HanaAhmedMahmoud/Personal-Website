@@ -10,7 +10,7 @@ import {Suspense} from 'react';
 export default function Home() {
   return (
     <div>
-      <NavigationBar />
+      <NavigationBar partOfWebsite="home" />
       <Landing />
       <AboutMe />
       <Background />

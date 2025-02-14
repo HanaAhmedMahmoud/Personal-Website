@@ -3,16 +3,20 @@ import {useEffect, useState} from 'react';
 import {Link} from 'react-scroll';
 import clsx from 'clsx';
 
-export default function NavigationBar() {
-  const [userClicked, setClicked] = useState('home');
+type param = {
+  partOfWebsite: string;
+};
+
+export default function NavigationBar({partOfWebsite}: param) {
+  const [userClicked, setClicked] = useState(partOfWebsite);
 
   useEffect(() => {
-    setClicked('home');
+    setClicked(partOfWebsite);
   }, []);
 
   return (
     <div className="fixed w-full top-0 right-0 py-6 z-30">
-      <div className="absolute top-0 right-0 flex flex-row gap-2 sm:gap-10 py-0.5 px-0.5 sm:mx-10 bg-white rounded-xl">
+      <div className="absolute top-0 right-0 flex flex-row gap-5 sm:gap-10 py-0.5 px-0.5 sm:mx-10 bg-white rounded-xl">
         <button
           className={clsx(
             'sm:w-[80px] sm:h-[35px] rounded-xl',
