@@ -22,8 +22,8 @@ export default function AboutMe() {
           {'opacity-0': !isVisible1}
         )}
       >
-        <div className="flex justify-around">
-          <div className="relative overflow-avalible w-[500px] h-[500px] flex items-center justify-center">
+        <div className="flex flex-col sm:flex-row justify-center items-center sm:justify-around">
+          <div className="relative overflow-visible w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] flex items-center justify-center">
             <div className="absolute inset-0 z-10 flex items-center justify-center">
               <Image
                 src="/assets/hana-photo.png"
@@ -52,22 +52,22 @@ export default function AboutMe() {
             </div>
           </div>
 
-          <div>
+          <div className="text-center sm:text-right mt-10 sm:mt-0">
             <h1
-              className={`${poltawski.className} text-6xl sm:text-8xl flex place-content-end`}
+              className={`${poltawski.className} text-5xl sm:text-8xl flex sm:justify-end`}
             >
               About me
             </h1>
             <p
-              className={`${m_plus_1.className} w-[350px] sm:w-[600px] sm:text-lg my-10 text-right`}
+              className={`${m_plus_1.className} w-[300px] sm:w-[600px] sm:text-lg my-10`}
             >
-              I am a confident, enthusiastic and curious second year computer
-              science student at the University of Nottingham who is dedicated
-              to using my skills and knowledge to drive positive change in the
-              technological field, particularly to inspire young women into the
+              I am a confident, enthusiastic, and curious second-year computer
+              science student at the University of Nottingham, dedicated to
+              using my skills and knowledge to drive positive change in the
+              technological field. I aspire to inspire young women into the
               industry as I was once inspired myself. I actively seek out
-              opportunities for personal and professional growth and I aim to
-              finish my degree with a 1st and remain an ambitious person.
+              opportunities for personal and professional growth, aiming to
+              finish my degree with a 1st while remaining ambitious.
             </p>
           </div>
         </div>
