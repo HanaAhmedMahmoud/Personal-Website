@@ -16,10 +16,10 @@ export default function NavigationBar({partOfWebsite}: param) {
 
   return (
     <div className="fixed w-full top-0 right-0 py-6 z-30">
-      <div className="absolute top-0 right-0 flex flex-row gap-5 sm:gap-10 py-0.5 px-0.5 sm:mx-10 bg-white rounded-xl">
+      <div className="absolute top-0 right-0 flex flex-row gap-2 sm:gap-10 py-1 mx-5 sm:mx-10 bg-white rounded-xl">
         <button
           className={clsx(
-            'w-[30px] h-[10px] sm:w-[80px] sm:h-[35px] rounded-xl',
+            'w-[60px] h-[30px] sm:w-[80px] sm:h-[35px] rounded-xl',
             {'bg-[#E2BDF0]': userClicked == 'home'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'home'}
           )}
@@ -37,7 +37,7 @@ export default function NavigationBar({partOfWebsite}: param) {
 
         <button
           className={clsx(
-            'w-[30px] h-[10px] sm:w-[80px] sm:h-[35px] rounded-xl',
+            'w-[70px] h-[30px] sm:w-[80px] sm:h-[35px] rounded-xl',
             {'bg-[#E2BDF0]': userClicked == 'about-me'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'about-me'}
           )}
@@ -56,7 +56,7 @@ export default function NavigationBar({partOfWebsite}: param) {
 
         <button
           className={clsx(
-            'w-[30px] h-[10px] sm:w-[100px] sm:h-[35px] rounded-xl',
+            'w-[100px] h-[30px] sm:w-[100px] sm:h-[35px] rounded-xl',
             {'bg-[#E2BDF0]': userClicked == 'experience'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'experience'}
           )}
@@ -75,7 +75,7 @@ export default function NavigationBar({partOfWebsite}: param) {
 
         <button
           className={clsx(
-            'w-[30px] h-[10px] sm:w-[80px] sm:h-[35px] rounded-xl',
+            'w-[60px] h-[30px] sm:w-[80px] sm:h-[35px] rounded-xl',
             {'bg-[#E2BDF0]': userClicked == 'projects'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'projects'}
           )}
@@ -93,7 +93,7 @@ export default function NavigationBar({partOfWebsite}: param) {
 
         <button
           className={clsx(
-            'w-[30px] h-[10px] sm:w-[80px] sm:h-[35px] rounded-xl',
+            'w-[60px] h-[30px] sm:w-[80px] sm:h-[35px] rounded-xl',
             {'bg-[#E2BDF0]': userClicked == 'contact'},
             {'bg-white hover:bg-[#F6EBFA]': userClicked != 'contact'}
           )}
