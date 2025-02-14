@@ -2,46 +2,63 @@
 
 ## **Introduction**
 
-This is my personal website, built using React and Node.js. I developed this project to showcase my skills and experience, leveraging what I learned during my time as a developer at SafelyHome.
+Welcome to my personal website! Built with React and Node.js, this project showcases my skills and experience, particularly what I learned as a developer at SafelyHome.
 
 ## **Skills Learned**
 
 - UI design and prototyping in Figma
 - Frontend development with React and Next.js
 - Styling with Tailwind CSS
+- Working with emailing APIs
+- Implementing responsive design
 
 ## **Prototype**
 
-Before development, I created prototypes in Figma to visualise the design and layout of my website. Below are images of the initial designs.  
-<img width="922" alt="Screenshot 2025-02-01 at 16 37 03" src="https://github.com/user-attachments/assets/aa7c58c9-2a4c-442d-b787-0c2729851e0e" />
+Before development, I designed prototypes in Figma to visualize the layout and structure of my website. Below are images of the initial designs:
 
-## **Process**
+![Prototype Screenshot](https://github.com/user-attachments/assets/aa7c58c9-2a4c-442d-b787-0c2729851e0e)
 
-I first created a Next.js project (suprising amount of time to set it up!) then created the relevant pages in the source. Whilst programming up the prototypes, I had to make the decision if I wanted each page to be seperate or have one continous scrollable page.
+## **Final Product**
 
-## **Components created**
+The website is deployed on Vercel (since I don't own a domain yet—maybe in a few years when I'm rich and famous haha). Check it out here:
 
-- Background (using tailwind blur and positioning to create a purple aura for the back of the webpage)
-- Navigation bar (takes in a string to indicate which page user is on, dynamically updating on clicks)
+🔗 [Live Website](https://hana-ahmed-mahmoud.vercel.app/)
 
-## **Animations**
+### **Responsive Design Proof**
 
-- Use of ternery operators and opacity to fade in and out boxes from the page - animated p tag?
-- Credits to https://medium.com/@jacobvejlinjensen/how-to-create-a-smooth-appear-on-scroll-transition-with-tailwind-css-and-react-82f2a32ab295
+Photos demonstrating responsiveness: _(to be added!)_
 
-## **Live Demo**
+## **Development Process**
 
-[Link incoming]
+1. **Project Setup:** Created a Next.js project (which took longer than expected to set up!).
+2. **Page Structure:** Designed a single continuous scrollable page with navigation instead of separate pages.
+3. **Future Plans:** I’d love to add a blog section to document my thoughts and adventures while studying abroad.
 
-## **Setup & Installation**
+## **Page Components**
 
-To run this project locally:
+### **Modules:**
 
-1. Clone the repository:
-   ```bash
-   git clone [your-repo-link]
-   ```
+- **Background:** Uses Tailwind blur effects to create a soft purple aura.
+- **Navigation Bar:** Dynamically updates based on user interaction.
+- **About Me:** A flexbox section containing my bio and a photo, using ReactCurvedText for text wrapping.
+- **Experience:** Implements Alice Carousel and experience-bubbles for an interactive, scrollable timeline.
+- **Projects:** Similar to the experience section, using Alice Carousel.
+- **Contact:** Displays a modal with form validation, handling API requests for email submissions.
 
-Things to sort out:
-page size
-responsive design
+### **Components:**
+
+- **Carousel Components:** Renders dot indicators for Alice Carousel.
+- **Experience & Project Bubbles:** Displays content in the carousel.
+- **Links:** Provides easy access to my CV, LinkedIn, and email.
+
+## **Animations, APIs, and Hooks**
+
+- **Animations:** Implemented using ternary operators and opacity changes for smooth fade-in effects.
+- **Custom Hook:** Created `useIfVisible`, utilizing IntersectionObserver to detect scrolling behavior.
+  - Inspired by [this guide](https://medium.com/@jacobvejlinjensen/how-to-create-a-smooth-appear-on-scroll-transition-with-tailwind-css-and-react-82f2a32ab295).
+- **APIs:** Uses Resend and NextResponse in API routes to handle email submissions from the contact form.
+
+---
+
+This project has been an exciting learning experience, and I look forward to expanding it in the future!
+

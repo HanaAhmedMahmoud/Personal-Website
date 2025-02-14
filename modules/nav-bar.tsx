@@ -12,7 +12,7 @@ export default function NavigationBar({partOfWebsite}: param) {
 
   useEffect(() => {
     setClicked(partOfWebsite);
-  }, []);
+  }, [partOfWebsite]);
 
   return (
     <div className="fixed w-full top-0 right-0 py-6 z-30">
