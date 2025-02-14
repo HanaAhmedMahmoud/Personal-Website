@@ -10,7 +10,9 @@ Welcome to my personal website! Built with React and Node.js, this project showc
 - Frontend development with React and Next.js
 - Styling with Tailwind CSS
 - Working with emailing APIs
-- Implementing responsive design
+- Implementing responsive design so website works on both phone and laptop
+- Creating custom hooks
+- Basic animations on the web
 
 ## **Prototype**
 
@@ -22,11 +24,19 @@ Before development, I designed prototypes in Figma to visualize the layout and s
 
 The website is deployed on Vercel (since I don't own a domain yet—maybe in a few years when I'm rich and famous haha). Check it out here:
 
-🔗 [Live Website](https://hana-ahmed-mahmoud.vercel.app/)
+- [Live Website](https://hana-ahmed-mahmoud.vercel.app/)
 
 ### **Responsive Design Proof**
 
-Photos demonstrating responsiveness: _(to be added!)_
+Laptop view: 
+<img width="1430" alt="Screenshot 2025-02-14 at 21 24 38" src="https://github.com/user-attachments/assets/2ce3194d-ecb1-44a0-be40-aa4567e859e5" />
+<img width="1336" alt="Screenshot 2025-02-14 at 21 24 45" src="https://github.com/user-attachments/assets/03f93193-7ea2-4bb3-b3de-f3eac603d284" />
+
+Phone view:
+<img width="392" alt="Screenshot 2025-02-14 at 21 02 31" src="https://github.com/user-attachments/assets/879823b4-7288-4cec-b44c-b6a613e966b6" />
+<img width="372" alt="Screenshot 2025-02-14 at 21 02 38" src="https://github.com/user-attachments/assets/427044d3-5f51-43e3-af3d-daec7840ae59" />
+
+
 
 ## **Development Process**
 
