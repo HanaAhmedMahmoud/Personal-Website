@@ -10,6 +10,30 @@ import NavigationBar from './nav-bar';
 
 export const experiences = [
   {
+  name: 'University of Auckland',
+  role: 'Study Abroad',
+  date: 'February 2025 - June 2025',
+  desc:
+    'I was competitively selected to study abroad at the University of Auckland, a world-leading research university. ' +
+    'This experience strengthened my independence, adaptability, and cross-cultural collaboration while broadening my academic perspective. ' +
+    'During my time there, I joined the Empathic Computing Lab as a research intern and connected with leading HCI professors. ' +
+    'I also participated in hackathons and coding clubs, gaining new technical skills and engaging with an international developer community.',
+},
+
+  {
+    name: 'Empathetic Computing Lab',
+    role: 'Research Intern',
+    date: 'April 2025 - Present',
+    desc:
+      'Throughout my time in New Zealand, I contributed to a research project on repurposing the Wii Balance Board \n'+
+      'to collect balance data for researchers, medical professionals and game developers. \n' +
+      'Working in a team of three lovely individuals, I co-authored a research paper \n' + 
+      '(in preparation for CHI Conference 2025) detailing the system architecture, \n' +
+      'React Native implementation, and usability studies as well as \n' +
+      'survey data collection and data visulation. I designed Figma prototypes, supported data analysis, \n' +
+      'and collaborated across the full research process. \n', 
+  },
+  {
     name: 'SafelyHome',
     role: 'Volunteer software engineer',
     date: 'November 2024 - Present',
@@ -26,7 +50,7 @@ export const experiences = [
   {
     name: 'WCS',
     role: 'EDI Officer',
-    date: 'November 2023 - Present',
+    date: 'November 2023 - July 2025',
     desc:
       'Co-founded the Women in Computer Science (WCS) Society at the University\n' +
       'of Nottingham with other students to create a safe space where women and non- \n' +
@@ -38,9 +62,19 @@ export const experiences = [
   },
 
   {
+  name: 'WCS',
+  role: 'President',
+  date: 'July 2025 - Present',
+  desc:
+    'Progressing from my role as EDI Officer, I am currently leading the Women in Computer Science Society at the University of Nottingham, overseeing a committee of 10 to deliver workshops, outreach initiatives, and events aimed at empowering women in technology. ' +
+    'I collaborate with industry partners and academic staff to expand mentorship, networking, and research opportunities for members. ' +
+    'I am committed to helping and building a community for students at the University of Nottingham.', 
+},
+
+  {
     name: 'UoN',
     role: 'Computer Science Mentor',
-    date: 'September 2024 - Present',
+    date: 'September 2024 - Septempber 2025',
     desc:
       'Throughout my second year at Nottingham, I provided academic and pastoral \n' +
       'support to 30+ 1st year students to support their transition into university \n' +
@@ -49,6 +83,18 @@ export const experiences = [
       'on effective note-taking techiques for 70 new students, sponsered by Notion, developing\n' +
       'my communication and public speaking skills.',
   },
+
+  {
+  name: 'UoN',
+  role: 'Computer Science Senior Mentor',
+  date: 'September 2025 - Present',
+  desc:
+    'After a year as a Mentor, I progressed to Senior Mentor where I now oversee a team of mentors \n' +
+    'supporting incoming first-year students. I help coordinate mentor activities, liaise with academic staff, \n' +
+    'and ensure consistent support is available across the cohort. \n' +
+    'This position has strengthened my leadership, organisation, and collaboration skills while giving me greater responsibility \n' +
+    'in shaping the student experience within the School of Computer Science.',
+},
 
   {
     name: 'IEUK Experience 2024',

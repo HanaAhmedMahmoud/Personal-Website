@@ -61,13 +61,13 @@ export default function AboutMe() {
             <p
               className={`${m_plus_1.className} w-[350px] sm:w-[600px] sm:text-lg my-10 text-right`}
             >
-              I am a confident, enthusiastic and curious second year computer
-              science student at the University of Nottingham who is dedicated
-              to using my skills and knowledge to drive positive change in the
-              technological field, particularly to inspire young women into the
-              industry as I was once inspired myself. I actively seek out
-              opportunities for personal and professional growth and I aim to
-              finish my degree with a 1st and remain an ambitious person.
+              I am a dedicated third-year Computer Science student with a strong interest in Human-Computer Interaction (HCI) research.
+               Passionate about using my skills and knowledge to drive positive change in the tech industry,
+                I am  particularly motivated to inspire young women to pursue careers in computer science.
+                With a confident, enthusiastic, and curious mindset, I actively seek out challenges 
+                that foster growth and learning. As I continue my studies, I am eager to explore research 
+                possibilities that will help me build the foundation for a PhD after my undergraduate studies.
+                 My goal is to graduate with a First-Class degree while sustaining my drive and determination.
             </p>
           </div>
         </div>

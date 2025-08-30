@@ -40,7 +40,7 @@ export default function Landing() {
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          Second Year Computer Science Student at the University of Nottingham
+          Third Year Computer Science Student at the University of Nottingham
         </p>
       </div>
 

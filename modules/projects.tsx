@@ -8,6 +8,41 @@ import AliceCarousel from 'react-alice-carousel';
 import NavigationBar from './nav-bar';
 
 export const projects = [
+
+  {
+  name: 'Virtual Photobooth',
+  language: 'React Native, Firebase',
+  skills: 'Prototyping, Database Management, Interaction Design',
+  date: 'July 2025 - Present',
+  desc:
+    'Created an app connecting two users to a shared database for real-time photo interactions across the world! ' +
+    'Designed both low and high-fidelity prototypes, and implemented live backend integration with Firebase. ' +
+    'Through this project I deepened my understanding of synchronous interaction design, real-time systems, and backend data management.',
+  link: 'https://github.com/HanaAhmedMahmoud/virtual_photobooth',
+},
+{
+  name: 'Code Blue',
+  language: 'Godot Engine, GDScript',
+  skills: 'Game Design, Simulation, Team Collaboration',
+  date: 'March 2025 - June 2025',
+  desc:
+    'Collaborated with a team to design and implement a game simulating patient care during a zombie apocalypse, themed around “crash.” ' +
+    'I focused on real-time event handling and game mechanics, exploring connections between gaming, simulation, and user experience research. ' +
+    'The project strengthened my skills in collaborative software development, iterative design, and creative problem solving.',
+  link: 'https://github.com/HanaAhmedMahmoud/Code-Blue',
+},
+{
+  name: 'Thunderdome Weather Machine',
+  language: 'React Native, APIs',
+  skills: 'API Integration, Data Visualisation, UX Design',
+  date: 'March 2025',
+  desc:
+    'Developed a website that simulates historical weather and natural disasters on a user’s birth date during a hackathon at the University of Auckland ' +
+    'Integrated weather API data and designed the front-end interface, prototyping playful experiences around environmental data. ' +
+    'This project allowed me to explore how visualisation and creative design can make datasets engaging and meaningful for users.',
+  link: 'https://github.com/HanaAhmedMahmoud/Terrible-Ideas-The-Thunderdome',
+},
+  
   {
     name: 'Personal Website',
     language: 'React, Next.js, TypeScript',
